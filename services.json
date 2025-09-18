@@ -1,0 +1,343 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "خدمات الحوسبة السحابية",
+      "category": "تقنية",
+      "description": "خدمات الحوسبة السحابية المتقدمة للشركات والأفراد. تشمل التخزين السحابي، الحوسبة العالية الأداء، والأمان المتقدم.",
+      "provider": "تقنية السحاب",
+      "price": "يبدأ من 100 ريال شهرياً",
+      "website": "https://cloud-tech.sa",
+      "contact": {
+        "phone": "+966123456789",
+        "email": "info@cloud-tech.sa"
+      },
+      "features": [
+        "تخزين آمن وموثوق",
+        "نسخ احتياطي تلقائي",
+        "دعم فني 24/7",
+        "الوصول من أي مكان"
+      ],
+      "featured": true,
+      "rating": 4.8,
+      "reviews": 245,
+      "location": "الرياض",
+      "createdAt": "2025-01-15"
+    },
+    {
+      "id": 2,
+      "name": "استشارات طبية عن بعد",
+      "category": "صحة",
+      "description": "استشارات طبية متخصصة عبر الإنترنت مع أفضل الأطباء في المملكة. تشخيص دقيق وعلاج موثوق.",
+      "provider": "مستشفى الرعاية",
+      "price": "150 ريال للجلسة",
+      "website": "https://telemedicine.sa",
+      "contact": {
+        "phone": "+966123456790",
+        "email": "consult@telemedicine.sa"
+      },
+      "features": [
+        "استشارة فورية",
+        "أطباء معتمدون",
+        "وصفات إلكترونية",
+        "متابعة طبية"
+      ],
+      "featured": true,
+      "rating": 4.9,
+      "reviews": 892,
+      "location": "جدة",
+      "createdAt": "2025-01-10"
+    },
+    {
+      "id": 3,
+      "name": "دورات البرمجة المتقدمة",
+      "category": "تعليم",
+      "description": "تعلم البرمجة من الصفر حتى الاحتراف مع مدربين معتمدين. تشمل JavaScript، Python، React، والذكاء الاصطناعي.",
+      "provider": "أكاديمية الكود",
+      "price": "500 ريال للدورة",
+      "website": "https://code-academy.sa",
+      "contact": {
+        "phone": "+966123456791",
+        "email": "learn@code-academy.sa"
+      },
+      "features": [
+        "مشاريع عملية",
+        "شهادات معتمدة",
+        "دعم وظيفي",
+        "محتوى عربي"
+      ],
+      "featured": false,
+      "rating": 4.7,
+      "reviews": 156,
+      "location": "الدمام",
+      "createdAt": "2025-01-08"
+    },
+    {
+      "id": 4,
+      "name": "خدمات البنك الرقمي",
+      "category": "خدمات مالية",
+      "description": "حلول مصرفية رقمية متكاملة للأفراد والشركات. تحويلات فورية، مدفوعات ذكية، واستثمارات آمنة.",
+      "provider": "البنك الرقمي",
+      "price": "مجاني",
+      "website": "https://digital-bank.sa",
+      "contact": {
+        "phone": "+966123456792",
+        "email": "support@digital-bank.sa"
+      },
+      "features": [
+        "حسابات مجانية",
+        "تحويلات فورية",
+        "بطاقات ذكية",
+        "استثمار رقمي"
+      ],
+      "featured": true,
+      "rating": 4.6,
+      "reviews": 1205,
+      "location": "الرياض",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": 5,
+      "name": "تطبيق توصيل الطعام",
+      "category": "نقل",
+      "description": "اطلب طعامك المفضل من أفضل المطاعم في المملكة مع توصيل سريع وآمن. أكثر من 1000 مطعم.",
+      "provider": "توصيل سريع",
+      "price": "عمولة 15%",
+      "website": "https://food-delivery.sa",
+      "contact": {
+        "phone": "+966123456793",
+        "email": "orders@food-delivery.sa"
+      },
+      "features": [
+        "توصيل في 30 دقيقة",
+        "تتبع مباشر",
+        "خيارات دفع متعددة",
+        "تقييمات المطاعم"
+      ],
+      "featured": false,
+      "rating": 4.5,
+      "reviews": 2341,
+      "location": "جميع المدن",
+      "createdAt": "2025-01-05"
+    },
+    {
+      "id": 6,
+      "name": "خدمات الأمن السيبراني",
+      "category": "تقنية",
+      "description": "حماية شاملة للشركات من التهديدات السيبرانية. مراقبة 24/7، حماية متقدمة، واستجابة فورية.",
+      "provider": "أمان تك",
+      "price": "حسب الحجم",
+      "website": "https://cybersec.sa",
+      "contact": {
+        "phone": "+966123456794",
+        "email": "security@cybersec.sa"
+      },
+      "features": [
+        "مراقبة مستمرة",
+        "حماية متقدمة",
+        "تحليل التهديدات",
+        "استجابة طوارئ"
+      ],
+      "featured": true,
+      "rating": 4.9,
+      "reviews": 78,
+      "location": "الرياض",
+      "createdAt": "2025-01-14"
+    },
+    {
+      "id": 7,
+      "name": "تطبيق اللياقة البدنية",
+      "category": "صحة",
+      "description": "برامج تدريب شخصية ومتابعة صحية مع مدربين محترفين. تمارين مخصصة، تغذية صحية، ومتابعة مستمرة.",
+      "provider": "فيت لايف",
+      "price": "99 ريال شهرياً",
+      "website": "https://fitlife.sa",
+      "contact": {
+        "phone": "+966123456795",
+        "email": "fitness@fitlife.sa"
+      },
+      "features": [
+        "تمارين مخصصة",
+        "مدرب شخصي",
+        "خطط تغذية",
+        "متابعة التقدم"
+      ],
+      "featured": false,
+      "rating": 4.4,
+      "reviews": 567,
+      "location": "جدة",
+      "createdAt": "2025-01-06"
+    },
+    {
+      "id": 8,
+      "name": "منصة التعليم الإلكتروني",
+      "category": "تعليم",
+      "description": "منصة تعليمية شاملة تضم آلاف الدورات في مختلف المجالات. شهادات معتمدة، محتوى عربي، ودعم مستمر.",
+      "provider": "تعلم أونلاين",
+      "price": "يبدأ من 50 ريال",
+      "website": "https://learn-online.sa",
+      "contact": {
+        "phone": "+966123456796",
+        "email": "courses@learn-online.sa"
+      },
+      "features": [
+        "آلاف الدورات",
+        "شهادات معتمدة",
+        "محتوى عربي",
+        "تعلم تفاعلي"
+      ],
+      "featured": true,
+      "rating": 4.8,
+      "reviews": 3452,
+      "location": "الخبر",
+      "createdAt": "2025-01-11"
+    },
+    {
+      "id": 9,
+      "name": "خدمات الاستثمار الذكي",
+      "category": "خدمات مالية",
+      "description": "استثمر أموالك بذكاء مع نصائح خبراء الاستثمار. الذكاء الاصطناعي يدير محفظتك بأفضل الطرق.",
+      "provider": "استثمار ذكي",
+      "price": "عمولة 2%",
+      "website": "https://smart-invest.sa",
+      "contact": {
+        "phone": "+966123456797",
+        "email": "invest@smart-invest.sa"
+      },
+      "features": [
+        "ذكاء اصطناعي",
+        "محفظة متنوعة",
+        "عمولات منخفضة",
+        "تقارير دورية"
+      ],
+      "featured": false,
+      "rating": 4.6,
+      "reviews": 234,
+      "location": "الرياض",
+      "createdAt": "2025-01-09"
+    },
+    {
+      "id": 10,
+      "name": "تطبيق سيارات الأجرة",
+      "category": "نقل",
+      "description": "احجز سيارة أجرة بسهولة مع سائقين موثوقين ومعتمدين. أسعار تنافسية وخدمة ممتازة.",
+      "provider": "تاكسي بلس",
+      "price": "حسب المسافة",
+      "website": "https://taxi-plus.sa",
+      "contact": {
+        "phone": "+966123456798",
+        "email": "rides@taxi-plus.sa"
+      },
+      "features": [
+        "سائقون معتمدون",
+        "تتبع مباشر",
+        "أسعار عادلة",
+        "خدمة 24/7"
+      ],
+      "featured": false,
+      "rating": 4.3,
+      "reviews": 1876,
+      "location": "جميع المدن",
+      "createdAt": "2025-01-07"
+    },
+    {
+      "id": 11,
+      "name": "خدمات التسوق الإلكتروني",
+      "category": "تجارة إلكترونية",
+      "description": "متجر إلكتروني شامل لجميع احتياجاتك اليومية. ملايين المنتجات، توصيل سريع، وعروض يومية.",
+      "provider": "سوق الكتروني",
+      "price": "مجاني + توصيل",
+      "website": "https://e-souk.sa",
+      "contact": {
+        "phone": "+966123456799",
+        "email": "shop@e-souk.sa"
+      },
+      "features": [
+        "ملايين المنتجات",
+        "توصيل مجاني",
+        "عروض يومية",
+        "ضمان الجودة"
+      ],
+      "featured": true,
+      "rating": 4.7,
+      "reviews": 5643,
+      "location": "جميع المدن",
+      "createdAt": "2025-01-13"
+    },
+    {
+      "id": 12,
+      "name": "خدمات التصميم الجرافيكي",
+      "category": "إبداع",
+      "description": "تصميمات احترافية للشعارات والهوية البصرية. فريق مبدع من المصممين المحترفين.",
+      "provider": "كريتف ديزاين",
+      "price": "يبدأ من 200 ريال",
+      "website": "https://creative-design.sa",
+      "contact": {
+        "phone": "+966123456800",
+        "email": "design@creative-design.sa"
+      },
+      "features": [
+        "تصميم شعارات",
+        "هوية بصرية",
+        "تصميم مواقع",
+        "تعديلات مجانية"
+      ],
+      "featured": false,
+      "rating": 4.8,
+      "reviews": 432,
+      "location": "جدة",
+      "createdAt": "2025-01-04"
+    }
+  ],
+  "categories": [
+    {
+      "name": "تقنية",
+      "icon": "fas fa-laptop-code",
+      "description": "خدمات تقنية متقدمة",
+      "count": 2
+    },
+    {
+      "name": "صحة",
+      "icon": "fas fa-heartbeat",
+      "description": "خدمات صحية وطبية",
+      "count": 2
+    },
+    {
+      "name": "تعليم",
+      "icon": "fas fa-graduation-cap",
+      "description": "خدمات تعليمية",
+      "count": 2
+    },
+    {
+      "name": "خدمات مالية",
+      "icon": "fas fa-coins",
+      "description": "خدمات مصرفية ومالية",
+      "count": 2
+    },
+    {
+      "name": "نقل",
+      "icon": "fas fa-car",
+      "description": "خدمات النقل والتوصيل",
+      "count": 2
+    },
+    {
+      "name": "تجارة إلكترونية",
+      "icon": "fas fa-shopping-cart",
+      "description": "خدمات التسوق الإلكتروني",
+      "count": 1
+    },
+    {
+      "name": "إبداع",
+      "icon": "fas fa-palette",
+      "description": "خدمات إبداعية وتصميم",
+      "count": 1
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-01-19",
+    "totalServices": 12,
+    "totalCategories": 7,
+    "version": "1.0.0",
+    "language": "ar"
+  }
+}

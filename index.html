@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قاعدة البيانات - جميع الخدمات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-database"></i>
+                    <h1>قاعدة البيانات</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">الرئيسية</a>
+                    <a href="#services" class="nav-link">الخدمات</a>
+                    <a href="#categories" class="nav-link">الفئات</a>
+                    <a href="#add" class="nav-link">إضافة خدمة</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>مرحباً بك في قاعدة البيانات الشاملة</h2>
+                    <p>اكتشف جميع الخدمات المتاحة في مكان واحد</p>
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="ابحث عن الخدمة التي تحتاجها...">
+                            <select id="categoryFilter">
+                                <option value="">جميع الفئات</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h3 id="totalServices">0</h3>
+                        <p>إجمالي الخدمات</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-list"></i>
+                        <h3 id="totalCategories">0</h3>
+                        <p>الفئات المتاحة</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h3 id="featuredServices">0</h3>
+                        <p>الخدمات المميزة</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>10000+</h3>
+                        <p>المستخدمون</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>الخدمات المتاحة</h2>
+                    <p>تصفح جميع الخدمات حسب الفئة</p>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="تقنية">تقنية</button>
+                    <button class="filter-btn" data-filter="صحة">صحة</button>
+                    <button class="filter-btn" data-filter="تعليم">تعليم</button>
+                    <button class="filter-btn" data-filter="خدمات مالية">خدمات مالية</button>
+                    <button class="filter-btn" data-filter="نقل">نقل</button>
+                </div>
+
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Services will be loaded here -->
+                </div>
+                
+                <div class="load-more">
+                    <button class="btn btn-primary" id="loadMoreBtn">عرض المزيد</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section" id="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>الفئات الرئيسية</h2>
+                    <p>استكشف الخدمات حسب الفئة</p>
+                </div>
+                <div class="categories-grid" id="categoriesGrid">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Service Section -->
+        <section class="add-service-section" id="add">
+            <div class="container">
+                <div class="section-header">
+                    <h2>إضافة خدمة جديدة</h2>
+                    <p>ساهم في إثراء قاعدة البيانات</p>
+                </div>
+                <div class="add-service-form">
+                    <form id="addServiceForm">
+                        <div class="form-group">
+                            <label for="serviceName">اسم الخدمة</label>
+                            <input type="text" id="serviceName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceCategory">الفئة</label>
+                            <select id="serviceCategory" required>
+                                <option value="">اختر الفئة</option>
+                                <option value="تقنية">تقنية</option>
+                                <option value="صحة">صحة</option>
+                                <option value="تعليم">تعليم</option>
+                                <option value="خدمات مالية">خدمات مالية</option>
+                                <option value="نقل">نقل</option>
+                                <option value="أخرى">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceDescription">الوصف</label>
+                            <textarea id="serviceDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceProvider">مقدم الخدمة</label>
+                            <input type="text" id="serviceProvider" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicePrice">السعر</label>
+                            <input type="text" id="servicePrice" placeholder="مجاني / حسب الطلب / رقم">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceWebsite">الموقع الإلكتروني</label>
+                            <input type="url" id="serviceWebsite">
+                        </div>
+                        <button type="submit" class="btn btn-primary">إضافة الخدمة</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>قاعدة البيانات</h3>
+                    <p>منصة شاملة لجميع الخدمات المتاحة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#categories">الفئات</a></li>
+                        <li><a href="#add">إضافة خدمة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@database.com</li>
+                        <li><i class="fas fa-phone"></i> +966 123 456 789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 قاعدة البيانات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Service details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
